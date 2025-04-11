@@ -1,0 +1,59 @@
+{
+    "auth": {
+      "user_pool_id": "us-east-1_CEa6Kewb6",
+      "aws_region": "us-east-1",
+      "user_pool_client_id": "71rphhk90cdgm5gjj5i09tsq65",
+      "identity_pool_id": "us-east-1:1bf6a90b-c5ca-40b0-bafc-2ed2efc626d6",
+      "mfa_methods": [],
+      "standard_required_attributes": [
+        "email"
+      ],
+      "username_attributes": [
+        "email"
+      ],
+      "user_verification_types": [
+        "email"
+      ],
+      "groups": [],
+      "mfa_configuration": "NONE",
+      "password_policy": {
+        "min_length": 8,
+        "require_lowercase": true,
+        "require_numbers": true,
+        "require_symbols": true,
+        "require_uppercase": true
+      },
+      "unauthenticated_identities_enabled": true
+    },
+    "storage": {
+      "aws_region": "us-east-1",
+      "bucket_name": "amplify-husbandgram-focuso-bookfilesbuckete2e2806d-picf8vswrxwn",
+      "buckets": [
+        {
+          "name": "book-files",
+          "bucket_name": "amplify-husbandgram-focuso-bookfilesbuckete2e2806d-picf8vswrxwn",
+          "aws_region": "us-east-1",
+          "paths": {
+            "book-audio/*": {
+              "guest": [
+                "get",
+                "list"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "version": "1.3",
+    "custom": {
+      "husbandToBookifyUrl": "https://6rnyhn4y2wil43poryjgkxssne0dnalo.lambda-url.us-east-1.on.aws/",
+      "textToSpeechUrl": "https://46jhnst4nutb7g5xlfmt7jvwq40xkjwm.lambda-url.us-east-1.on.aws/",
+      "sendMMSUrl": "https://tp55g2x5p3irvoyynvvvqu3u5i0yenxk.lambda-url.us-east-1.on.aws/",
+      "events": {
+        "url": "https://xrqyf3z57re2dgndzdugrvrhie.appsync-api.us-east-1.amazonaws.com/event",
+        "api_key": "da2-chr34ip2czavxcukw5ewzqk22i",
+        "aws_region": "us-east-1",
+        "default_authorization_type": "API_KEY"
+      }
+    }
+  }
